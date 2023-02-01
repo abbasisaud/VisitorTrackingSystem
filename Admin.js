@@ -12,8 +12,9 @@ import axios from "axios";
 
 export default function AdminMain(props){
     const [fill, SetFill] = useState(45);
-    const [fill2, SetFill1] = useState(70);
-    const [fill3, SetFill2] = useState(8);
+    const [fill2, SetFill2] = useState(70);
+    const [fill3, SetFill3] = useState(global.alert);
+    // SetFill3(global.alert)
 
 
     async function submit() {
@@ -89,7 +90,8 @@ export default function AdminMain(props){
       </TouchableOpacity>
     
     <TouchableOpacity onPress={()=>{
-              props.navigation.navigate('Alerts')            
+            props.navigation.navigate('Alerts')
+            // console.log(global.alert)            
               }} > 
       <AnimatedCircularProgress
         size={100}
@@ -173,6 +175,15 @@ export default function AdminMain(props){
                      <Icon name={"golf"} color={"#1c7ed6"}  size={30} />
 
                     <Text style={styles.textbuton}>Add Destination</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                    style={styles.roundButton2}  
+                    onPress={()=>{props.navigation.navigate('UpdatePath')}}
+                    >
+                     <Icon name={"duplicate"} color={"#1c7ed6"}  size={30} />
+
+                    <Text style={styles.textbuton}>Update Path</Text>
                     </TouchableOpacity>
                     
 

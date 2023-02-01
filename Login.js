@@ -7,8 +7,6 @@ import COLORS from "./colors";
 import axios from "axios";
 import {AnimatedCircularProgress} from 'react-native-circular-progress';
 
-
-
 export default function Login(props){
   const[username,setusername]=useState()
   const[Password,setPassword]=useState()
@@ -41,14 +39,9 @@ export default function Login(props){
 
   return(
     <View style={{backgroundColor:'white',flex:1}}> 
-    
+       
 
-
-
-
-
-
-        
+      
           <Image style={{height:'35%',borderRadius:30,width:'100%',
           marginStart:'1%', marginEnd:'1%'}} source={require('./images/logins.png')} />   
             <Text  style={styles.text}> Login </Text>   
@@ -78,7 +71,7 @@ export default function Login(props){
             <TouchableOpacity
             style={styles.roundButton1}
             onPress={()=>{
-              props.navigation.navigate('AdminHome')
+              props.navigation.navigate('GuardHome')
 
               // checkIdPass()
               }} >

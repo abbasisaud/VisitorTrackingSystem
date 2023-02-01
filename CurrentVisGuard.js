@@ -34,14 +34,7 @@ import COLORS from "./colors";
         
     ];
 
-    function showToast() {
-        ToastAndroid.showWithGravity(
-            "Time Updated",
-            ToastAndroid.LONG,
-            ToastAndroid.CENTER,
-           
-          );
-    }
+    
     const Visiterinfo=({name,cnic,phonNo,Destination})=>(
         <View style={{padding:5, borderWidth:1,borderColor:COLORS.mainblue,margin:10}}>
            
@@ -50,19 +43,7 @@ import COLORS from "./colors";
             <Text style={styles.text3}>{'Cnic: '+cnic}</Text>
             <Text style={styles.text3}>{'PhonNo: '+phonNo}</Text>
             <Text style={styles.text3}>{'Destination: '+Destination}</Text>
-            <TouchableOpacity style={{width: '40%',
-            height: '15%',
-            alignSelf:'center',
-           justifyContent: 'center',
-           alignItems: 'center',           
-            borderRadius:10,
-            marginTop:20,
-            backgroundColor:"#adb5bd",}}
-            onPress={showToast} > 
-                <Text style={styles.text2}>
-                    Left
-                </Text>
-            </TouchableOpacity>
+            
 
         </View>
     );

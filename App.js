@@ -14,6 +14,11 @@ import PersonMain from "./person";
 import AddCamera from "./AddCamera";
 import AddPath from "./AddPath";
 import AddDestination from "./AddDestination";
+import Take from "./AlertDetails";
+import UpdateTime from "./UpdateTime";
+import DeleteCamera from "./DeleteCamera";
+import CamToCamTime from "./CamToCamTime";
+import AppD from "./TableInput";
 export default function App(){
   return(
     <MainFile/>

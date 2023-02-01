@@ -17,6 +17,9 @@ import AddCamera from "./AddCamera";
 import AddDestination from "./AddDestination";
 import AddPath from "./AddPath";
 import CurrentVisGuard from "./CurrentVisGuard";
+import UpdatePath from "./Updatepath";
+import UpdateTime from "./UpdateTime";
+import DeleteCamera from "./DeleteCamera";
 
 
 const Tab=createBottomTabNavigator()
@@ -96,19 +99,17 @@ function GuardScreen(){
                         headerStyle: {
                             backgroundColor: '#dee2e6',
                           },
-                          headerTintColor: '#fff',
-                          
+                          headerTintColor: '#fff',                         
                           headerTitleStyle: {
                             fontWeight: 'bold',
-                            color:'#495057',
-                            
+                            color:'#495057',                            
                           },
                         tabBarOptions: { 
                             showIcon: true,                        
                          },
                          
                     }}  
-                    navigationOption
+                    
                     ></Tab.Screen>
                     <Tab.Screen name="Alerts" component={Alert}
                     options={{
@@ -152,6 +153,12 @@ export default function MainFile(){
         <Stack.Screen name="AddCamera"component={AddCamera}/>
         <Stack.Screen name="AddPath"component={AddPath}/>
         <Stack.Screen name="AddDestination"component={AddDestination}/>
+        <Stack.Screen name="UpdatePath"component={UpdatePath}/>
+        <Stack.Screen name="UpdateTime"component={UpdateTime}/>
+        <Stack.Screen name="DeleteCamera"component={DeleteCamera}/>
+
+
+
 
 
 
